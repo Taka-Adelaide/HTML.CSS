@@ -11,8 +11,7 @@ header {
 
 .content-box {
   margin: 50px auto;
-  width: 960px;
-  
+  width: 960px;  
   display: flex;
 }
 
@@ -34,7 +33,7 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  line-height: 2;
+  
 }
 
 .image1 {
@@ -65,4 +64,26 @@ header {
 footer {
   height: 50px;
   background-color: #aaaaaa;
+}
+
+@media screen and (max-width: 768px) {
+  .content-box {    
+    margin: 50px 0;
+    width: 100%;
+    display: block;        
+  }
+
+  .content {
+    width: 90%;    
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;    
+  }
+
+  .content:last-child {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+  
 }
